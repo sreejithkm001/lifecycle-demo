@@ -1,0 +1,14 @@
+<div style="text-align:center">
+  <h1>
+    Welcome to Lifecycle Hooks Demo!
+  </h1>
+</div>
+<app-demo [inputData]="demoInput">
+  <p>This content is projected into the demo component!</p>
+</app-demo>
+
+<div class="container">
+  <input type="text" #input>
+  <button (click)="OnSubmit(input)">Submit</button>
+  <app-child [value]="inputText"></app-child>
+</div>
